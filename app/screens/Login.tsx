@@ -55,16 +55,19 @@ const Login = () => {
                             end={{x:1, y: 1}}
                             style={styles.buttonLogin}
                         >
-                            <Text style={styles.textButton} onPress={signUp}>LOGIN</Text>
+                            <Text style={styles.textButton} onPress={signIn}>LOGIN</Text>
                         </LinearGradient>
-                        <LinearGradient
+                    
+                    </TouchableOpacity>
+                    <TouchableOpacity  style={styles.containerButton} >
+                    <LinearGradient
                             // Button Linear Gradient
                             colors={['#FFB677', '#FF3CBD']}
                             start={{x: 0, y: 0}}
                             end={{x:1, y: 1}}
                             style={styles.buttonSignUp}
                         >
-                            <Text style={styles.textButton} onPress={signIn}>CREATE ACCOUNT</Text>
+                            <Text style={styles.textButton} onPress={signUp}>CREATE ACCOUNT</Text>
                         </LinearGradient>
                     </TouchableOpacity>
                    
@@ -139,7 +142,7 @@ const styles = StyleSheet.create({
          padding: 10,
          alignItems: 'center',
          justifyContent: 'center',
-         marginTop: 40
+         marginTop: 20
       },
       buttonSignUp: {
         width: '90%',
@@ -148,7 +151,7 @@ const styles = StyleSheet.create({
         padding: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 20
+        marginTop: 90
       }
         
       });
